@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Clase3 Febrero 2023</string>
+    <string name="Lado1">Ingrese lado 1</string>
+    <string name="Lado2">Ingrese lado 2</string>
+    <string name="resultado">Calcular</string>
+    <string name="texto">El resultado es</string>
+
 </resources>

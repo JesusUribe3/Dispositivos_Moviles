@@ -3,14 +3,26 @@ package jesus.uribe.dispositivos.clase3febrero2023;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.ed
 
 public class MainActivity extends AppCompatActivity {
- string TAG = "Depuracion";
+ String TAG = "Depuracion";
+ EditText lado1, ladodo2;
+ TextView resultado;
+ Button calcular;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.i(TAG, msg "Estoy en OnCreate");
+        Log.i(TAG, "Estoy en onCreate");
+        lado1 =  findViewById(R.id.lado1);
+        ladodo2 = findViewById(R.id.lado2);
+        resultado = findViewById(R.id.resultado);
+        calcular = findViewById(R.id.calcular);
 
     }
 
