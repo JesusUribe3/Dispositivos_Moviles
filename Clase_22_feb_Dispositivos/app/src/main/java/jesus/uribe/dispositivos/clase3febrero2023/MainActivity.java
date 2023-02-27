@@ -23,44 +23,43 @@ public class MainActivity extends AppCompatActivity {
         resultado = findViewById(R.id.resultado);
         calcular = findViewById(R.id.calcular);
 
-    }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.i(TAG, "Estoy en OnStart");
-        calcular.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                float ladoone = Float.parseFloat(ladouno.getText().toString());
-                float ladotwo = Float.parseFloat(ladodos.getText().toString());
-                float result =ladoone*ladotwo;
-                resultado.setText(String.valueOf(result));
+        @Override
+        protected void onStart () {
+            super.onStart();
+            Log.i(TAG, "Estoy en OnStart");
+            calcular.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    float ladoone = Float.parseFloat(ladouno.getText().toString());
+                    float ladotwo = Float.parseFloat(ladodos.getText().toString());
+                    float result = ladoone * ladotwo;
+                    resultado.setText(String.valueOf(result));
 
-            }
-        });
+                }
+            });
 
-    }
+        }
 
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.i(TAG, "Estoy en onRestart");
-    }
+        @Override
+        protected void onRestart () {
+            super.onRestart();
+            Log.i(TAG, "Estoy en onRestart");
+        }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i(TAG, "Estoy en onResume");
-    }
+        @Override
+        protected void onResume () {
+            super.onResume();
+            Log.i(TAG, "Estoy en onResume");
+        }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.i(TAG, "Estoy en onPause");
-    }
+        @Override
+        protected void onPause () {
+            super.onPause();
+            Log.i(TAG, "Estoy en onPause");
+        }
 
     @Override
     protected void onStop() {
@@ -68,9 +67,10 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "Estoy en OnStop");
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i(TAG, "Estoy en onDestroy");
+        @Override
+        protected void onDestroy () {
+            super.onDestroy();
+            Log.i(TAG, "Estoy en onDestroy");
+        }
     }
 }
