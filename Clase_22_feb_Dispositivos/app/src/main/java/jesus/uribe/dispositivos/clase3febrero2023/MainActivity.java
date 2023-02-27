@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
  Button calcular;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(TAG, "Estoy en onCreate");
         ladouno =  findViewById(R.id.lado1);
@@ -26,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         calcular = findViewById(R.id.calcular);
 
     }
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
     @Override
     protected void onStart() {
